@@ -18,15 +18,14 @@ end
 
 # Prints each integer values in the array
 # Time complexity: O(n)
-# Space complexity: O(n)
+# Space complexity: O(1)
 def print_array(array)
   length = length(array)
-  result = ""
   for i in 0...length do
-    result << array[i].to_s 
-    result << " "
+    print array[i]
+    print " "
   end
-  puts result.chomp(" ")
+  puts
 end
 
 # For an unsorted array, searches for 'value_to_find'.
